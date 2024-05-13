@@ -1,53 +1,127 @@
+html {
+    margin: 20px;
+    padding: 20px;
+   }
+head {
+    background-color: black;
+}
 body {
     background-color: black; 
-     }
-h1{
-background-color: blanchedalmond;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 50px;
+}
+h1 {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 button {
-    background-color:deeppink;
-    color:black;
-font-family: Arial, Helvetica, sans-serif; 
-font-size: 50px; text-align: left;
+    border: rgb(230, 120, 221) 10px solid;
+    padding: 20px;
+    margin: 20px; 
+    color: black;
+    background-color:#f49cdf;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 40px;
+    border-radius: 20px;
 }
-h2 {background-color: deeppink;
+h2 {
+    background-color: #f49cdf;
     color:black;
-font-family: Arial;
-font-size: 80px;}
-.contenedor {
-    margin-top: right;
+    font-family: Arial;
+    font-size: 40px;
 }
-h4 {background-color: deeppink;
+h4 {
+    background-color:#f49cdf; 
     color:black;
-    font-size: 50px;
+    font-size: 40px;
     font-family: Arial;
 }
 .header-container {
+    background-color: #42085b;
     display: flex;
     justify-content: space-between;
-    align-items: center;  }
-.flex-cointainer {
-    display:flex;
-    justify-content: space-between; 
     align-items: center;
-    }
-.logo {
-margin-right: auto;    }
-    .button-container{ 
-        background-color:deeppink;
-        color:black;
-    font-family: Arial, Helvetica, sans-serif; 
-    font-size: 50px; 
-    text-align:center;
-    margin: 0 10px;
-justify-self: center;
-align-items: center;
+    border: #f49cdf 20px solid;
+    padding: 20px
 }
-.container-img {
-        display: grid;
-        justify-content: space-between;
-            grid-template-columns: repeat(4, 1fr); 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-right: auto;
+}
+.button-container { 
+    border-radius: 20px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20%;
+    text-align: center;
+    }
+button.novias {
+    background-color: deeppink;
+    color: black;
+    border-radius: 20px;
+    margin-right: 800px;
+}
+.button.novias:hover {
+transition: 0,5 seg;
+    background-color: rgb(241, 236, 210);
+}
+button.social {
+    background-color: fuchsia;
+    color: black;
+    border-radius: 20px;
+    margin-right: 600px;
+}
+button.artistico {
+    background-color: hotpink;
+    color: black;
+    border-radius: 20px;
+    margin-right: 500px;
+    margin-left: 300px;
+}
+button.cursos {
+    background-color: magenta;
+    color: black;
+    border-radius: 20px;
+    margin-left: 400px;
+}
+.fondo-largo {
+    width: 1450px;
+    display: flex;  
+    justify-content: space-between;
+    }
+    .container-imagenes {
+    margin: 25px;
+    padding: 25px;
+    display: grid;
+    width: 50px;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    align-items: center;}
+    justify-content: space-between;
+    align-items: center;
+       }
+.form-container{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-group{
+    width: 800px;
+    background-color: rgb(66, 8, 91);
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    align-items: center;
+    border: #f49cdf 20px solid;
+    padding: 20px;
+    color:antiquewhite;
+    font-size: 40px;
+}

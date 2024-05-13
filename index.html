@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB MAQUILLLAJE</title>
-<link rel="stylesheet" href="estilos.css">
-</head>
+    <title>WEB MAQUILLAJE</title>
+    <link rel="stylesheet" href="estilos.css">
+   </head>
+
 <body>
-    <header>
-        <div class="header-container">
-          <h1 class="logo">Florencia Makeup</h1> 
-          <nav class="flex-container grid-container"> 
-            <button>Acerca de mi</button>
-            <button>Tienda</button>
-            <button>Portfolio</button>
-            <button>Turnos</button>
-          </nav>
-        </div>
-      </header>
-      <main>
-            <img src="Black.jpg" alt="fondo negro">
+  <header>
+    <div class="header-container">
+        <div class="logo">
+          <img src="logo-flor.png" alt="logo-flor">
+          </div>
+        <nav class="flex-container grid-container"> 
+          <a href="https://www.instagram.com/florlp.makeup/" target="_blank">
+            <button>Acerca de mi</button> </a>
+            <a href="https://www.vanityshop.com.ar/makeup/" target="_blank"> 
+            <button>Tienda</button>  </a>           
+           <a href="https://calendly.com/app/availability/schedules" target="_blank"> 
+            <button>Turnos</button> </a>
+            </nav>
+            </div>
+    </header>
+    <main>
+        <div> 
+          <div class="fondo-largo">
+              <img src="pink2.png" alt="pink2">
+              <img src="pblack.png" alt="pblack">
+              <img src="pink1.png" alt="pink1">
+          </div> 
             <div class="button-container"> 
-                <button>Novias</button>
-                <button>Social</button>
-                <button>Artístico</button>
-                <button>Cursos</button>
-            </div>
-  <div class= "container-img">
-        <div class= "img-item1">
-        <img src="3.jpg" alt="Novias">
+            <button class="novias">Novias</button>
+            <button class="social">Social</button>
+            <button class="artistico">Artístico</button>
+            <button class="cursos">Cursos</button>
+        </div>
+          <div class="container-imagenes">
+              <div class="img-item1">
+                  <img src="3.jpg" alt="Novias">
+              </div>
+              <div class="img-item2">
+                  <img src="4.jpg" alt="Social">
+              </div>
+              <div class="img-item3">
+                  <img src="5.jpg" alt="Artístico">
+              </div>
+              <div class="img-item4">
+                  <img src="6.jpg" alt="Cursos">
+              </div>
+          </div>
+      </div>
+  </main>
+  <form>
+    <div class="form-container">
+      <div class="form-group">
+      <h4> Formulario de Consulta: </h4>
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" class="form-control" id="nombre"  name="nombre" placeholder="Ana Pérez" required>
+          </div>
+    <div class="form-group">
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" class="form-control" id="correo"  name="correo" placeholder="ana@correo.com" required>
+    </div>
+    <div class="form-group">
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" class="form-control" id="telefono"   name="telefono" placeholder="Cód de área + número"required>
+    </div>
+    <div class="form-group">
+      <p><label>Consulta: <textarea name="texto" cols="50"   placeholder="Escriba aquí su consulta y tipo de servicio que le interesa."
+        rows="6"></textarea></label></p> 
+      </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </div>
-    <div class= "img-item2">
-        <img src="4.jpg" alt="Social">
+      </form>
     </div>
-    <div class= "img-item3">
-                <img src="5.jpg" alt="Artístico">
-    </div>
-    <div  class= "img-item4">
-                <img src="6.jpg" alt="Cursos">
-                </section>
-            </div>
-</main>
-<footer>
-<h4>Instagram</h4>
-<h4>Formulario</h4>
-</footer>
+    <footer>
+        <h4>Instagram</h4>
+    </footer>
+</body>
+</html>
