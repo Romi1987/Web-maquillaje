@@ -69,7 +69,16 @@ button:hover {
     justify-content: space-between;
     align-items: center;
 }
-
+.card-img-top:hover {
+   filter: grayscale(80%);
+}
+.card-title {
+    text-align: center;
+    color: antiquewhite;
+}
+.card-tex {
+    text-align:center
+}
 .form-container {
     margin: 20px;
     padding: 20px;
@@ -98,7 +107,12 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
+.card {
+   background-color: rgb(66, 8, 91);
+    }
+.card-tex {
+    color: beige;
+}
 .contact-form .btn-send {
     background-color: #f49cdf;
     border: none;
@@ -120,19 +134,5 @@ input, textarea {
     font-size: 16px;
     color: #f49cdf;
     text-align: center;
-}
-
-.footer .btn {
-    background-color: #54456b;
-    border: none;
-    color: white;
-}
-
-.footer .btn i {
-    font-size: 24px;
-}
-
-.footer .btn:hover {
-    background-color: #d70c94;
 }
 
