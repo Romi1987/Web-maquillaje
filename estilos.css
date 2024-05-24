@@ -1,208 +1,138 @@
-html {
-    margin: 20px;
-    padding: 20px;
-   }
-head {
-    background-color: black;
-}
-body {
-    background-color: black; 
-}
-.poetsen-one-regular {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    }
+    background-color: black;
+    color: white;
+}
+
 h1 {
     background-color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
+
 button {
-    border: rgb(230, 120, 221) 10px solid;
-    padding: 20px;
-    margin: 20px; 
+    border: 2px solid rgb(230, 120, 221);
+    padding: 10px;
+    margin: 10px;
     color: black;
-    background-color:#f49cdf;
+    background-color: #f49cdf;
     font-family: "Poetsen One", sans-serif;
-    font-size: 40px;
-    border-radius: 20px;
+    font-size: 20px;
+    border-radius: 5px;
 }
+
 button:hover {
     border: none;
     color: white;
-    padding: 14px 28px;
     cursor: pointer;
-    border-radius: 5px;
-    background-color: #d70c94; 
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.9); 
+    background-color: #d70c94;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.9);
 }
-h2 {
-    background-color: #f49cdf;
-    color:black;
-    font-family: Arial;
-    font-family: "Poetsen One", sans-serif;
-}
-h4 {
-    background-color:#f49cdf; 
-    color:black;
-    padding: 60px;
-    font-size: 60px;
-    font-family: "Poetsen One", sans-serif;
-}
+
 .header-container {
     background-color: #42085b;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: #f49cdf 20px solid;
-    padding: 20px
+    padding: 20px;
+    border-bottom: 2px solid #f49cdf;
 }
+
+.header-container .logo img {
+    max-height: 200px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        text-align: center;
+    }
+    .header-container .logo {
+        margin-bottom: 10px;
+    }
+}
+
+.header-container .btn {
+    margin: 0 5px;
+    background-color: #f49cdf;
+    color: #42085b;
+    border: none;
+}
+
+.header-container .btn:hover {
+    background-color: #d70c94;
+    color: white;
+}
+
 .flex-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    margin-right: auto;
-}
-.button-container { 
-    border-radius: 20px;
-    display: flex;
+
+.form-container {
     margin: 20px;
-    justify-content: center;
-    font-family: "Poetsen One", sans-serif;
-    font-size: 20%;
-    text-align: center;
-    }
-button.novias {
-    background-color: deeppink;
-    color: black;
-    border-radius: 20px;
-    margin-right: 800px;
-}
-button.novias:hover {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #d4206e; 
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.9); 
-}
-button.social {
-    background-color: fuchsia;
-    color: black;
-    border-radius: 20px;
-    margin-right: 600px;
-}
-button.social:hover {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #d4206e; 
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.9); 
-}
-button.artistico {
-    background-color: hotpink;
-    color: black;
-    border-radius: 20px;
-    margin-right: 500px;
-    margin-left: 300px;
-}
-button.artistico:hover {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #d4206e; 
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.9); 
-}
-button.cursos {
-    background-color: magenta;
-    color: black;
-    border-radius: 20px;
-    margin-left: 400px;
-}
-button.cursos:hover {
-    border: none;
-    color: white;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #d4206e; 
-    transition: transform 0.3s ease-in-out; 
-    transform: scale(0.9); 
-  }
-.fondo-largo {
-    width: 1450px;
-    display: flex;  
-    justify-content: space-between;
-    }
-    .container-imagenes {
-    margin: 25px;
-    padding: 25px;
-    display: grid;
-    width: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-       }
-    .img-item1:hover {
-        filter: grayscale(80%);
-    }
-    .img-item2:hover {
-        filter: grayscale(80%);
-    }
-    .img-item3:hover {
-        filter: grayscale(80%);
-    }
-    .img-item4:hover {
-        filter: grayscale(80%);
-    }
-.form-container{
-    margin: 60px;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poetsen One", sans-serif;
+    padding: 20px;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
 }
-.form-group{
-    width: 800px;
+
+.form-group {
+    width: 100%;
+    max-width: 800px;
     background-color: rgb(66, 8, 91);
-    display: flex;
-    justify-content: left;
-    line-height: 1.5;
-    align-items: center;
-    font-family: "Poetsen One", sans-serif;
-    border: #f49cdf 20px solid;
+    margin-bottom: 15px;
     padding: 20px;
-    color:antiquewhite;
-    font-size: 40px;
+    color: antiquewhite;
+    font-size: 16px;
+    border: 2px solid #f49cdf;
 }
-input {
-    padding: 20px 0;
-    width: 200px;
-    font-size: 30px;
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
-footer {
+
+.contact-form .btn-send {
+    background-color: #f49cdf;
+    border: none;
+    color: #42085b;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.contact-form .btn-send:hover {
+    background-color: #d70c94;
+    color: white;
+}
+
+.footer {
     background-color: #42085b;
-    display: flex;
-    border: #f49cdf 20px solid;
     padding: 20px;
     font-family: "Poetsen One", sans-serif;
-    font-size: 30px;
-    color:#f49cdf;
-    text-align:justify;
-    }
+    font-size: 16px;
+    color: #f49cdf;
+    text-align: center;
+}
+
+.footer .btn {
+    background-color: #54456b;
+    border: none;
+    color: white;
+}
+
+.footer .btn i {
+    font-size: 24px;
+}
+
+.footer .btn:hover {
+    background-color: #d70c94;
+}
+

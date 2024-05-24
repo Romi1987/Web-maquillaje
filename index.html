@@ -4,84 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB MAQUILLAJE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-   </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KkJ6igTrH/5dRmH+8x5boKkP10R7Q2Qw1T2q0jEU5QbRkfj" crossorigin="anonymous">
+</head>
 <body>
-  <header>
-    <div class="header-container">
-        <div class="logo">
-          <img src="logo-flor.png" alt="logo-flor">
-          </div>
-        <nav class="flex-container grid-container"> 
-          <a href="https://www.instagram.com/florlp.makeup/" target="_blank">
-            <button>Acerca de mi</button> </a>
-            <a href="https://www.vanityshop.com.ar/makeup/" target="_blank"> 
-            <button>Tienda</button>  </a> 
-           <a href="https://calendly.com/app/availability/schedules" target="_blank"> 
-            <button>Turnos</button> </a>
-            </nav>
+    <header class="header-container">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-3 text-center text-md-left">
+                    <div class="logo">
+                        <img src="logo-flor.png" alt="logo-flor" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-9 text-center text-md-right">
+                    <nav class="d-inline-flex flex-wrap justify-content-center justify-content-md-end">
+                        <a href="https://www.instagram.com/florlp.makeup/" target="_blank" class="btn btn-outline-primary">Acerca de mi</a>
+                        <a href="https://www.vanityshop.com.ar/makeup/" target="_blank" class="btn btn-outline-primary">Tienda</a>
+                        <a href="https://calendly.com/app/availability/schedules" target="_blank" class="btn btn-outline-primary">Turnos</a>
+                    </nav>
+                </div>
             </div>
+        </div>
     </header>
     <main>
-        <div> 
-          <div class="fondo-largo">
-              <img src="pink2.png" alt="pink2">
-              <img src="pblack.png" alt="pblack">
-              <img src="pink1.png" alt="pink1">
-          </div> 
-            <div class="button-container"> 
-            <button class="novias">Novias</button>
-            <button class="social">Social</button>
-            <button class="artistico">Artístico</button>
-            <button class="cursos">Cursos</button>
-        </div>
-          <div class="container-imagenes">
-              <div class="img-item1">
-                  <img src="3.jpg" alt="Novias">
-              </div>
-              <div class="img-item2">
-                  <img src="4.jpg" alt="Social">
-              </div>
-              <div class="img-item3">
-                  <img src="5.jpg" alt="Artístico">
-              </div>
-              <div class="img-item4">
-                  <img src="6.jpg" alt="Cursos">
-              </div>
-          </div>
-      </div>
-  </main>
-    <form>
-    <div class="form-container">
-      <div class="form-group">
-      <h4> Formulario de Consulta: </h4>
-    </div>
-    <div class="form-group">
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" size="1500" class="form-control" id="nombre"  name="nombre" placeholder="Ana Pérez" required>
-          </div>
-    <div class="form-group">
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" size="1500" class="form-control" id="correo"  name="correo" placeholder="ana@correo.com" required>
-    </div>
-    <div class="form-group">
-      <label for="telefono">Teléfono:</label>
-      <input type="tel" size="1500" class="form-control" id="telefono"   name="telefono" placeholder="Cód de área + número"required>
-    </div>
-    <div class="form-group">
-      <p><label>Consulta: </label>
-        <input textarea name="texto" cols="50"  size="1500" placeholder="Escriba aquí su consulta y tipo de servicio que le interesa."
-        rows="6"></textarea></p> 
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="pink2.png" class="img-fluid" alt="pink2">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="pblack.png" class="img-fluid" alt="pblack">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="pink1.png" class="img-fluid" alt="pink1">
+                </div>
             </div>
-    <div class="form-group">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-  </div>
-      </form>
-          </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="3.jpg" alt="Novias">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Novias</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="4.jpg" alt="Social">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Social</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="5.jpg" alt="Artístico">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Artístico</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <div class="view overlay">
+                            <img class="card-img-top" src="6.jpg" alt="Cursos">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Cursos</h4>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="text-center mt-5">
+                <h1>Comunicate conmigo</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card mt-2 mx-auto p-4 bg-light">
+                        <div class="card-body bg-light">
+                            <div class="container">
+                                <form id="contact-form" role="form">
+                                    <div class="controls">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_name">Nombre *</label>
+                                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_lastname">Apellido *</label>
+                                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_need">Servicio de interés *</label>
+                                                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                                        <option value="" selected disabled>--Selecciona uno--</option>
+                                                        <option>Novias</option>
+                                                        <option>Social</option>
+                                                        <option>Cursos</option>
+                                                        <option>Artístico</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="form_message">Mensaje *</label>
+                                                    <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="submit" class="btn btn-success btn-send pt-2 btn-block" value="Send Message">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-      <p> <2024> Florencia- Make-up. Todos los derechos reservados.</p> </footer>
+      <div class="container my-5">
+          <footer class="text-center text-lg-start" style="background-color: #db30cd;">
+              <div class="container d-flex justify-content-center py-5">
+                  <a href="https://www.facebook.com/" target="_blank" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                      <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://www.twitter.com/" target="_blank" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                      <i class="fab fa-twitter"></i>
+                  </a>
+              </div>
+              <div class="text-center text-white p-3" style="background-color: #42085b;">
+                  © 2023 Florencia Luna Pardo
+              </div>
+          </footer>
+      </div>
+  </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
